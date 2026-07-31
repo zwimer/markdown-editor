@@ -25,6 +25,7 @@ repos:
         fail_fast: true
 
 - repo: https://github.com/immanuwell/dockerfile-roast
-  rev: 1.4.11
+  rev: 1.4.12
   hooks:
     - id: droast
+      args: ["--fail-on", "info"]
