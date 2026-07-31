@@ -1,0 +1,9 @@
+name: "markdown-editor"
+
+services:
+  markdown:
+    image: "zwimer/markdown-editor"
+    container_name: "markdown"
+    restart: unless-stopped
+    ports:
+      - 127.0.0.1:8080:8080
